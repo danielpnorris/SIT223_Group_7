@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+<!--Bootstrap and js links	-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+<!-- CSS file -->
+<link rel="stylesheet" href="styles.css">
+<!--Fonts	-->
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+<!-- Identical nav bar to Home page -->
+<!-- Temporary demo Navbar template from  https://getbootstrap.com/docs/4.0/components/navbar/-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"style="background-color: #393E41;">
+  <a class="navbar-brand" href="#"><span class="logo">CheckYourCar</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Form</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>   
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div>
+<!-- I'm guessing this would be where we could add a header for the page and maybe a brief description, but i have not done that as of yet -->
+	<p>THIS IS WHERE THE FORM GOES</p>
+</div>
+<!-- This is the Form we need to create. I currently have the "Make" section running as expected, but I am trying to implement a function that will return different values in the "Model" menu depending on what make is selected. -->
+<form action="" method="post" id="carForm" class="carForm">
+	<fieldset>
+		<label for="Make">Make</label>
+		<select name="Make" id="Make" class="form-control">
+			<option value="Toyota">Toyota</option>
+			<option value="Holden">Holden</option>
+			<option value="Ford">Ford</option>
+			<option value="Hyundau">Hyundai</option>
+			<option value="Mitsubishi">Mitsubishi</option>
+			<option value="Nissan">Nissan</option>
+		</select>
+		<label for="Model">Model</label>
+		<select name="modelList" id="modelList" class="form-control"></select>
+    <button class="btn btn-dark mt-2 my-2 my-sm-0" type="submit">Submit</button>
+
+	</fieldset>
+</form>
+
+
+</body>
+</html>
